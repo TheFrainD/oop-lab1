@@ -5,13 +5,13 @@ import java.util.Scanner;
 /*
  * OOP Lab1
  * 
- * @author: Dmytro Zykov
- * 
  * Номер заліковки: 508
  * С1 = 0 --> '+'
  * C3 = 1
  * C5 = 3 --> '+'
  * C7 = 4 --> 'char'
+ * 
+ * @author	Dmytro Zykov
  */
 
 public class Main {
@@ -36,6 +36,7 @@ public class Main {
 		
 		for (char i = (char) a; i <= n; i++) {
 			for (char j = (char) b; j <= m; j++) {
+				// Division by zero check
 				if ((i + c) == 0) {
 					System.out.println("Division by zero!");
 					continue;
