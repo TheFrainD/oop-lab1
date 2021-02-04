@@ -34,14 +34,14 @@ public class Main {
 		System.out.print("Enter M: ");
 		int m = scanner.nextInt();
 		
+		// Division by zero check
+		if ((a + c) == 0) {
+			System.out.println("Division by zero!");
+			return;
+		}
+		
 		for (char i = (char) a; i <= n; i++) {
 			for (char j = (char) b; j <= m; j++) {
-				// Division by zero check
-				if ((i + c) == 0) {
-					System.out.println("Division by zero!");
-					continue;
-				}
-				
 				total += (i + j) / (i + c);
 			}
 		}
