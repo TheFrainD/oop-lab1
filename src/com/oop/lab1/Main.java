@@ -23,18 +23,18 @@ public class Main {
 		final int c = 1;
 		
 		System.out.print("Enter A: ");
-		int a = scanner.nextInt();
+		char a = (char) scanner.nextInt();
 		
 		System.out.print("Enter B: ");
-		int b = scanner.nextInt();
+		char b = (char) scanner.nextInt();
 		
 		System.out.print("Enter N: ");
-		int n = scanner.nextInt();
+		char n = (char) scanner.nextInt();
 		
 		System.out.print("Enter M: ");
-		int m = scanner.nextInt();
+		char m = (char) scanner.nextInt();
 		
-		// Division by zero check
+		// Division by zero check, not needed if c is more then 1
 		if ((a + c) == 0) {
 			System.out.println("Division by zero!");
 			return;
