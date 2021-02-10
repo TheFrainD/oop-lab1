@@ -35,14 +35,14 @@ public class Main {
 		char m = (char) scanner.nextInt();
 		
 		// Division by zero check, not needed if c is more then 1
-		if ((a + c) == 0) {
+		if ( (a + c) == 0 ) {
 			System.out.println("Division by zero!");
 			return;
 		}
 		
-		for (char i = (char) a; i <= n; i++) {
-			for (char j = (char) b; j <= m; j++) {
-				total += (i + j) / (i + c);
+		for ( char i = (char) a; i <= n; i++ ) {
+			for ( char j = (char) b; j <= m; j++ ) {
+				total += ((double) (i + j)) / ((double) (i + c));
 			}
 		}
 		
